@@ -1,28 +1,22 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About';
-import Portfolio from './components/Portfolio';
-import Experience from './components/Experience';
-import Footer from './components/Footer';
-import Contact from './components/Contact';
-import { Toaster } from 'react-hot-toast';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Project from "./components/Project";
+import Main from "./components/Main";
 
 function App() {
   return (
     <>
-    <div>
-    <Navbar/>
-    <Home/>
-    <About/>
-    <Portfolio/>
-    <Experience/>
-    <Contact/>
-    <Footer/>
-    </div>
-    <Toaster/>
+      <div>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Main/>}/>
+            <Route path="/project" element={<Project />} />
+          </Routes>
+         </Router>
+      </div>
+      
     </>
-  )
+  );
 }
 
 export default App;
