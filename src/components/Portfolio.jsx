@@ -4,11 +4,12 @@ import mongodb from "../../public/mongodb.jpg";
 import express from "../../public/express.png";
 import reactjs from "../../public/reactjs.png";
 import nodejs from "../../public/node.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 
 function Portfolio() {
+  
 
   const cardItem = [
     {
@@ -43,7 +44,7 @@ function Portfolio() {
     <div name="Portfolio" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-20 ">
       <div>
         <h1 className="text-3xl font-bold mb-5">Portfolio</h1>
-         <Link to='/project' className="underline semibold">Featured Projects</Link>
+         <Link to='/project' className="underline semibold">Featured Projects -- <span className="text-blue-500 underline">Click here to view my projects.</span> </Link>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-8">
           {cardItem.map(({ id, logo, name }) => (
             <div
