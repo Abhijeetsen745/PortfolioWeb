@@ -4,7 +4,7 @@ import mongodb from "../../public/mongodb.jpg";
 import express from "../../public/express.png";
 import reactjs from "../../public/reactjs.png";
 import nodejs from "../../public/node.png";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 
