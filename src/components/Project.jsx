@@ -24,7 +24,7 @@ function Project() {
         <a href="https://fullstack-chat-app-t4i4.onrender.com/" className='underline text-blue-500'>click here for live viewing the project</a>
       </div>
       <div className='h-[150px] w-[300px]  border-4 border-red-500 rounded p-5 mt-5' >
-        <h3>4. eNotebook App</h3>
+        <h3>5. eNotebook App</h3>
         <a href="https://e-notebook-frontend-eta.vercel.app/" className='underline text-blue-500'>click here for live viewing the project</a>
       </div>
     </div>
