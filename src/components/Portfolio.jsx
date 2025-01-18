@@ -9,8 +9,6 @@ import { Link } from "react-router-dom";
 
 
 function Portfolio() {
-  
-
 
   const cardItem = [
     {
